@@ -28,7 +28,10 @@
           "displayName": "Email",
           "description": null,
           "fieldType": "TEXT",
-          "fieldTypeAttributes": {},
+          "fieldTypeAttributes": {
+            "format": "UNFORMATTED",
+            "fieldSize": 100
+          },
           "isMeta": false,
           "isList": false,
           "isRequired": true,
@@ -43,7 +46,10 @@
           "displayName": "Password Hash",
           "description": null,
           "fieldType": "TEXT",
-          "fieldTypeAttributes": {},
+          "fieldTypeAttributes": {
+            "format": "UNFORMATTED",
+            "fieldSize": 255
+          },
           "isMeta": false,
           "isList": false,
           "isRequired": true,
@@ -58,7 +64,14 @@
           "displayName": "Failed Attempt Count",
           "description": null,
           "fieldType": "NUMBER",
-          "fieldTypeAttributes": {},
+          "fieldTypeAttributes": {
+            "format": "NUMBER",
+            "precision": 0,
+            "currency": null,
+            "minValue": null,
+            "maxValue": null,
+            "isBigInt": null
+          },
           "isMeta": false,
           "isList": false,
           "isRequired": false,
@@ -73,7 +86,10 @@
           "displayName": "Is Blocked",
           "description": null,
           "fieldType": "SWITCH",
-          "fieldTypeAttributes": {},
+          "fieldTypeAttributes": {
+            "format": "TRUE_FALSE",
+            "listOptions": null
+          },
           "isMeta": false,
           "isList": false,
           "isRequired": false,
@@ -111,7 +127,10 @@
           "displayName": "User ID",
           "description": null,
           "fieldType": "TEXT",
-          "fieldTypeAttributes": {},
+          "fieldTypeAttributes": {
+            "format": "UNFORMATTED",
+            "fieldSize": 255
+          },
           "isMeta": false,
           "isList": false,
           "isRequired": true,
