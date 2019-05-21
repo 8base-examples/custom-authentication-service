@@ -1,0 +1,14 @@
+input Todo1UserLoginInput {
+  """email or id of user"""
+  username: String!
+  password: String!
+}
+
+type Todo1UserLoginResponse {
+  success: Boolean!,
+  error: String
+}
+
+extend type Mutation {
+  todo1UserLogin(data: Todo1UserLoginInput!): Todo1UserLoginResponse
+}

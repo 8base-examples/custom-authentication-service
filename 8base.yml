@@ -1,0 +1,6 @@
+functions:
+  todo1UserLogin:
+    handler:
+      code: src/mutations/todo1UserLogin/index.js
+    type: resolver
+    schema: src/mutations/todo1UserLogin/schema.graphql

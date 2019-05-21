@@ -1,0 +1,203 @@
+{
+  "tables": [
+    {
+      "id": "5ce3f4cf23cd5e4913e574c7",
+      "name": "Todo1Users",
+      "displayName": "Todo1Users",
+      "isSystem": false,
+      "fields": [
+        {
+          "id": "5ce3f4cf23cd5e5ddce574c8",
+          "isSystem": true,
+          "name": "id",
+          "displayName": "ID",
+          "description": null,
+          "fieldType": "ID",
+          "fieldTypeAttributes": null,
+          "isMeta": true,
+          "isList": false,
+          "isRequired": true,
+          "isUnique": true,
+          "defaultValue": null,
+          "relation": null
+        },
+        {
+          "id": "5ce3f51523cd5e77c6e5755a",
+          "isSystem": false,
+          "name": "email",
+          "displayName": "Email",
+          "description": null,
+          "fieldType": "TEXT",
+          "fieldTypeAttributes": {},
+          "isMeta": false,
+          "isList": false,
+          "isRequired": true,
+          "isUnique": true,
+          "defaultValue": null,
+          "relation": null
+        },
+        {
+          "id": "5ce3f53345bd6d137575012c",
+          "isSystem": false,
+          "name": "passwordHash",
+          "displayName": "Password Hash",
+          "description": null,
+          "fieldType": "TEXT",
+          "fieldTypeAttributes": {},
+          "isMeta": false,
+          "isList": false,
+          "isRequired": true,
+          "isUnique": false,
+          "defaultValue": null,
+          "relation": null
+        },
+        {
+          "id": "5ce3f58245bd6d5195751548",
+          "isSystem": false,
+          "name": "failedAttemptCount",
+          "displayName": "Failed Attempt Count",
+          "description": null,
+          "fieldType": "NUMBER",
+          "fieldTypeAttributes": {},
+          "isMeta": false,
+          "isList": false,
+          "isRequired": false,
+          "isUnique": false,
+          "defaultValue": "0",
+          "relation": null
+        },
+        {
+          "id": "5ce3f59d45bd6d3407752cf7",
+          "isSystem": false,
+          "name": "isBlocked",
+          "displayName": "Is Blocked",
+          "description": null,
+          "fieldType": "SWITCH",
+          "fieldTypeAttributes": {},
+          "isMeta": false,
+          "isList": false,
+          "isRequired": false,
+          "isUnique": null,
+          "defaultValue": "false",
+          "relation": null
+        }
+      ]
+    },
+    {
+      "id": "5ce3f6ba976c877c9060a820",
+      "name": "Logs",
+      "displayName": "Logs",
+      "isSystem": false,
+      "fields": [
+        {
+          "id": "5ce3f6ba976c87766d60a821",
+          "isSystem": true,
+          "name": "id",
+          "displayName": "ID",
+          "description": null,
+          "fieldType": "ID",
+          "fieldTypeAttributes": null,
+          "isMeta": true,
+          "isList": false,
+          "isRequired": true,
+          "isUnique": true,
+          "defaultValue": null,
+          "relation": null
+        },
+        {
+          "id": "5ce3f7e1976c87fbab60bc01",
+          "isSystem": false,
+          "name": "userID",
+          "displayName": "User ID",
+          "description": null,
+          "fieldType": "TEXT",
+          "fieldTypeAttributes": {},
+          "isMeta": false,
+          "isList": false,
+          "isRequired": true,
+          "isUnique": false,
+          "defaultValue": null,
+          "relation": null
+        },
+        {
+          "id": "5ce3f79e976c87333e60b60f",
+          "isSystem": false,
+          "name": "event",
+          "displayName": "Event",
+          "description": null,
+          "fieldType": "SWITCH",
+          "fieldTypeAttributes": {
+            "format": "CUSTOM",
+            "listOptions": ["login"]
+          },
+          "isMeta": false,
+          "isList": false,
+          "isRequired": true,
+          "isUnique": null,
+          "defaultValue": null,
+          "relation": null
+        },
+        {
+          "id": "5ce3f7b7976c873e1060bad6",
+          "isSystem": false,
+          "name": "success",
+          "displayName": "Success",
+          "description": null,
+          "fieldType": "SWITCH",
+          "fieldTypeAttributes": {
+            "format": "TRUE_FALSE",
+            "listOptions": null
+          },
+          "isMeta": false,
+          "isList": false,
+          "isRequired": true,
+          "isUnique": null,
+          "defaultValue": null,
+          "relation": null
+        }
+      ]
+    }
+  ],
+  "data": {
+    "Todo1Users": [
+      {
+        "$id": "user-1",
+        "email": "user01@test.com",
+        "passwordHash": "$2b$10$OPdUVo3ilxhRQ1S/BVzoSuT7ZpD.mwPzGDjGZCNxaEh5uju2AK6XW"
+      },
+      {
+        "$id": "user-2",
+        "email": "user02@test.com",
+        "passwordHash": "$2b$10$Lg77uUJ613DsAxXClidDre3e.k0uj6GsiHFQzHhZ/.HpWR8is54bK"
+      },
+      {
+        "$id": "user-3",
+        "email": "user03@test.com",
+        "passwordHash": "$2b$10$VEOpTrvQDOaBWA0dlbDxZu.ho4qCtFReQA.9ZXaB0EWm.RdSrEzIy",
+        "isBlocked": true
+      },
+      {
+        "$id": "user-4",
+        "email": "user04@test.com",
+        "passwordHash": "$2b$10$oYcgOiG3KjDJkWAUPaTFcuz6aK2OGSrMSKGZfnFxCYf9KEx5Mm38m",
+        "failedAttemptCount": 1
+      },
+      {
+        "$id": "user-5",
+        "email": "user05@test.com",
+        "passwordHash": "$2b$10$s4iEf19Fgu6XRtkyy6KrMeZlLKwWe94pIYJe65mBYkwyV9uv3zwXy",
+        "failedAttemptCount": 2
+      },
+      {
+        "$id": "user-6",
+        "email": "user06@test.com",
+        "passwordHash": "$2b$10$VnWTB8ReCB1E/8GozRzgweuSmwrZq.G7YXtmv.KY64UOFJ3LWMiYa"
+      },
+      {
+        "$id": "user-7",
+        "email": "user07@test.com",
+        "passwordHash": "$2b$10$qa78BtalA1/dWvxicrPZqOCW/6iZIX026PPEWdNUUPo9wll2TDqSC"
+      }
+    ]
+  }
+}
